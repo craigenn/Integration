@@ -111,7 +111,7 @@ public class Storage {
 	// prints data to ShapeData.txt text file so the program can access it later
 	public void print() { 
 		try{    
-			PrintWriter printer = new PrintWriter("ShapeData.txt");    
+			PrintWriter printer = new PrintWriter("integration\\Outputs\\ShapeData.txt");    
 
 			printer.print(memory);    
 			printer.close();    

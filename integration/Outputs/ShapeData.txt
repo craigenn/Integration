@@ -1,0 +1,8 @@
+List of shapes:
+
+
+The largest shape was null: cm with an area of :0.0cm^2.
+
+All shapes were drawn 0 times.
+
+The average time taken to draw a shape was NaN seconds

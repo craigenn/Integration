@@ -1,5 +1,6 @@
 package ZigZag;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.Random;
 import java.util.Scanner;
@@ -8,17 +9,17 @@ import edu.cmu.ri.createlab.terk.robot.finch.Finch;
 
 public class finchtask {
 
-	static Finch myfinch = new Finch();
-	static int inputLength;
-	static int inputSections;
-	static double totalStraight;
-	static int totalDistance;
-	static int speed = genSpeed(); 
-	static int duration;
-	static double finaltime;
-	static Scanner number_of_sections;
+	 static Finch myfinch = new Finch();
+	 static int inputLength;
+	 static int inputSections;
+	 static double totalStraight;
+	 static int totalDistance;
+	 static int speed = genSpeed(); 
+	 static int duration;
+	 static double finaltime;
+	 static Scanner number_of_sections;
 	
-	public void start()
+	public static void start()
 	{
 		inputValues();
 		double duration = ((inputLength/(speed*0.102))*1000); //Calculating the time finch needs to move 

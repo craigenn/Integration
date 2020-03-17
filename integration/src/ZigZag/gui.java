@@ -19,7 +19,7 @@ public class gui {
 	{
 		try 
 		{
-			File file = new File("zigzagdata.txt");
+			File file = new File("integration\\Outputs\\zigzagdata.txt");
 			
 			if(!file.exists())
 			{
@@ -40,6 +40,7 @@ public class gui {
 			pw.println(finaltime);
 			pw.close();
 			System.out.println("Done");
+			mainmenu.mainmenu.menuframe.setVisible(true);
 		} 
 		catch (IOException e)
 		{

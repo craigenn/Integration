@@ -47,6 +47,7 @@ public class Navigate {
 
 				} else if (finchDirection == 'Q') {
 					System.out.println("Program has terminated");
+					mainmenu.mainmenu.menuframe.setVisible(true);
 					break;
 				}
 

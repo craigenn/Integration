@@ -1,0 +1,6 @@
+Section length in CM: 15
+Number of sections: 2
+Total distance travelled: 30
+Total straight line travelled: 21.22
+Randomly generated speed: 236
+Time taken to complete zigzag in seconds: 15.868

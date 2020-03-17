@@ -213,7 +213,7 @@ public class Forward_back {
 
 	public void writing() throws IOException {
 
-		FileWriter writehandle = new FileWriter("\\\\ikb\\home\\00\\1916100\\My Documents\\Navigate\\CommandLog.txt");
+		FileWriter writehandle = new FileWriter("integration\\Outputs\\CommandLog.txt");
 		BufferedWriter bw = new BufferedWriter(writehandle);
 
 		Calendar cal = Calendar.getInstance(); // Method researched to get current time.

@@ -7,12 +7,14 @@ import java.util.ArrayList;
 import java.awt.*;
 import javax.swing.*;
 
+
 import edu.cmu.ri.createlab.terk.robot.finch.Finch;
 
 
 public class programstart extends JFrame implements KeyListener {
 	//shared GUI components
 
+	
 	GridBagConstraints cell;
 	JFrame frame;
 	JPanel Panel;
@@ -22,13 +24,19 @@ public class programstart extends JFrame implements KeyListener {
 	JLabel ranges = new JLabel("Numbers between 15 and 85");
 
 	//arraylist of the Shape class for each instance
-	static ArrayList<Shape> Storage = new ArrayList<Shape>();
+	ArrayList<Shape> Storage = new ArrayList<Shape>();
 	//Counters of shapes drawn and min/max lengths allowed
-	static int triangleCount=0, squareCount=0, customCount=0;
-	final static int maxLength = 85, minLength = 15; 
+	static int triangleCount=0;
+	static int squareCount=0;
+	static int customCount=0;
+	final int maxLength = 85;
+	final int minLength = 15; 
 
 	static Finch finch = new Finch();	
 
+	
+	
+	
 	@SuppressWarnings("deprecation")
 	public void start() {
 		
@@ -389,7 +397,8 @@ public class programstart extends JFrame implements KeyListener {
 		Print.spacemaker();
 		Print.time(Storage);
 		Print.print();
-		System.exit(0);
+		frame.dispose();
+		mainmenu.mainmenu.menuframe.setVisible(true);
 
 	}
 
@@ -416,7 +425,7 @@ public class programstart extends JFrame implements KeyListener {
 	public void keyPressed(KeyEvent e) { // opens user manual on F1 press
 		if (e.getKeyCode()==KeyEvent.VK_F1) {
 			try {
-				Desktop.getDesktop().open(new File("helpfile.pdf"));
+				Desktop.getDesktop().open(new File("integration\\Outputs\\helpfile.pdf"));
 			}catch (IOException ioe) {
 				ioe.printStackTrace();
 			}
