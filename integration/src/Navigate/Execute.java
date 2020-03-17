@@ -20,7 +20,7 @@ public class Execute {
 
 	public void execute() throws IOException {
 
-		File f = new File("\\\\\\\\ikb\\\\home\\\\00\\\\1916100\\\\My Documents\\\\Navigate\\\\CommandLog.txt"); // Location of file
+		File f = new File("integration\\Outputs\\CommandLog.txt"); // Location of file
 		BufferedReader br = new BufferedReader(new FileReader(f));
 
 		Finch myfinch = new Finch();
@@ -147,7 +147,7 @@ public class Execute {
 
 	public void lineCount() throws IOException {
 
-		File f = new File("\\\\ikb\\home\\01\\1806401\\My Documents\\Navigate\\Commands.txt");
+		File f = new File("integration\\Outputs\\Commands.txt");
 		BufferedReader br = new BufferedReader(new FileReader(f));
 
 		int lineCounter = 0;
